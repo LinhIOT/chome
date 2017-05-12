@@ -11,17 +11,28 @@
  * module of the library.
  **************************************************************************************************/
  
- /* User-defined configuration for library */
+#ifndef CHOME_H_
+#define CHOME_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+ 
+/* User-defined configuration for library */
 #define "chome_LibCfg.h"
 
 /* Include other libraries here */
 
+/** \brief chome library major version */
+#define CHOME_LIBRARY_MAJOR_VERSION    0
 
- 
- /** \brief chome library major version */
- #define CHOME_LIBRARY_MAJOR_VERSION    0
- 
- /** \brief chome library minor version */
- #define CHOME_LIBRARY_MINOR_VERSION    0
- 
+/** \brief chome library minor version */
+#define CHOME_LIBRARY_MINOR_VERSION    0
+
+
+#ifdef __cplusplus
+} /* closing brace for extern "C" */
+#endif
+
+#endif /* CHOME_H_ */
  
